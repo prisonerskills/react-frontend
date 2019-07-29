@@ -5,7 +5,7 @@ export default function TalentCard (props) {
   return   <Card>
   
   <Card.Content>
-      <h2>Hola This works!</h2>
+      <h2>{props.talent.username}</h2>
     <Card.Header>{props.name}</Card.Header>
     <Card.Meta>
       <span className='date'>{props.HEADLINE}</span>
