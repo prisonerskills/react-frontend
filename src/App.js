@@ -7,8 +7,7 @@ import Login from './components/Login.js';
 export default function App() {
   return <main>
     <Header />
-    <Login />
-    <TabNav />
+    <TabNav /> 
     <AppRouter />
   </main>
 }
