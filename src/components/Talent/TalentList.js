@@ -7,15 +7,15 @@ export default function TalentList() {
   useEffect(() => {
    
 
-    axios.get(`https://rickandmortyapi.com/api/character/`)
+    axios.get(` https://sheltered-ravine-78333.herokuapp.com/api/users/`)
     .then(response =>{
-      setTalentList(response.data.results)
+      setTalentList(response.data)
   })
 }, [])
-
+console.log(talentList)
   return <section className='character-list grid-view'>
 
-      {talentList.map(talent => <TalentCards talent={talent} key={talent.id}/>)}
+       {talentList.map(talent => <TalentCards talent={talent} key={talent.id}/>)}
      
  
      

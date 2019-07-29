@@ -15,15 +15,15 @@ const Nav = props => (
 const createLabel = (iconName, labelText) => <span><Icon name={iconName} />{labelText}</span>
 
 const welcomeLabel = createLabel("home", "Prison 1")
-const prisonLabel = createLabel("users", "Prison 2")
-const locationLabel = createLabel("users", "Prison 3")
+const prisonLabel = createLabel("users", "Login")
+const locationLabel = createLabel("users", "Register")
 const episodeLabel = createLabel("users", "Prison 4")
 
 const panes = [
   { menuItem: <Menu.Item key='home' as={Nav} to={`/`} content={welcomeLabel} /> },
-  { menuItem: <Menu.Item key='talent' as={Nav} to={`/talent`} content={prisonLabel} /> },
+  { menuItem: <Menu.Item key='loginpage' as={Nav} to={`/loginpage`} content={prisonLabel} /> },
   { menuItem: <Menu.Item key='locations' as={Nav} to={`/locations`} content={locationLabel} /> },
-  { menuItem: <Menu.Item key='episodes' as={Nav} to={`/episodes`} content={episodeLabel} /> }
+  { menuItem: <Menu.Item key='talent' as={Nav} to={`/talent`} content={episodeLabel} /> }
 
 ]
 
