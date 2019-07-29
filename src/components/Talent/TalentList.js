@@ -5,7 +5,7 @@ const axios = require('axios');
 export default function TalentList() {
   const [talentList, setTalentList] = useState([]);
   useEffect(() => {
-   
+    
 
     axios.get(` https://sheltered-ravine-78333.herokuapp.com/api/users/`)
     .then(response =>{
@@ -23,4 +23,4 @@ console.log(talentList)
 
 }
 
-// Headline, Skills , Certifications, Experience, Professional Goals, Pay Rate, Available Start Date
+// Headline, Skills , Certifications, Experience, Professional Goals, Pay Rate, Available Start Date 

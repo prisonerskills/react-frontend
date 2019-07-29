@@ -19,7 +19,7 @@ export default function TalentCard (props) {
     </Card.Description>
   </Card.Content>
 </Card>
-    
+     
 }
 
 
