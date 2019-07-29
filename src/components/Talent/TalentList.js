@@ -5,7 +5,7 @@ const axios = require('axios');
 export default function TalentList() {
   const [talentList, setTalentList] = useState([]);
   useEffect(() => {
-   
+    
 
     axios.get(`https://rickandmortyapi.com/api/character/`)
     .then(response =>{
