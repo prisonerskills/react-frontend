@@ -23,4 +23,4 @@ export default function TalentList() {
 
 }
 
-// Headline, Skills , Certifications, Experience, Professional Goals, Pay Rate, Available Start Date
+// Headline, Skills , Certifications, Experience, Professional Goals, Pay Rate, Available Start Date 
