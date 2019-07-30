@@ -1,25 +1,43 @@
 import React from 'react'
-import { Card, Icon, Image } from 'semantic-ui-react'
+import talentList from './TalentList';
+
+import { Card, Button, Modal, Icon } from 'semantic-ui-react'
 
 export default function TalentCard (props) {
-  return   <Card>
+  return <Card>
   
   <Card.Content>
-      <h2>{props.talent.username}</h2>
-    <Card.Header>{props.name}</Card.Header>
+      
+    <Card.Header>{props.talent.name}</Card.Header>
     <Card.Meta>
-      <span className='date'>{props.HEADLINE}</span>
+      <span className='date'>{props.talent.name}</span>
     </Card.Meta>
     <Card.Description>
-    {props.status}
-    {props.CERTIFICATIONS}
-    {props.EXPERIENCE}
-    {props.PROFESSIONALGOALS}
+<p> Certifications: {props.talent.certifications[0]}, {props.talent.certifications[1]}, {props.talent.certifications[2]} </p>
+   
+   
+    <p>Goals: {props.talent.goals[0]},{props.talent.goals[1]} </p>
+   
+    
+    <p>Available Start Date:{props.talent.availStart}</p>
 
     </Card.Description>
   </Card.Content>
-</Card>
+  <Modal trigger={<Button>Learn More</Button>} closeIcon>
+    <Modal.Content>
+    <h2>{props.talent.name}</h2>
+  
+    <p>Pay Rate: {props.talent.payRate}</p>
     
+    <Button animated><Button.Content visible>
+      Offer Interview
+      </Button.Content>
+      <Button.Content hidden>Connecting to Email</Button.Content>
+    </Button>
+      </Modal.Content>
+      </Modal>
+</Card>
+ 
 }
 
 
