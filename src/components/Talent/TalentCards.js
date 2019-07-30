@@ -10,7 +10,7 @@ export default function TalentCard (props) {
       
     <Card.Header>{props.talent.name}</Card.Header>
     <Card.Meta>
-      <span className='date'>{props.talent.name}</span>
+      <span className='date'>{props.talent.headline}</span>
     </Card.Meta>
     <Card.Description>
 <p> Certifications: {props.talent.certifications[0]}, {props.talent.certifications[1]}, {props.talent.certifications[2]} </p>
@@ -32,7 +32,7 @@ export default function TalentCard (props) {
     <Button animated><Button.Content visible>
       Offer Interview
       </Button.Content>
-      <Button.Content hidden>Connecting to Email</Button.Content>
+      <Button.Content hidden>Next Step</Button.Content>
     </Button>
       </Modal.Content>
       </Modal>
