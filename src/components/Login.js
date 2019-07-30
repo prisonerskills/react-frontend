@@ -17,28 +17,27 @@ function LoginForm({ values, errors, touched, isSubmitting }) {
         <Field type="password" name="password" placeholder="Password" />
       </div>
       
-      <button disabled={isSubmitting}>Login</button>
+      <button disabled={isSubmitting}>Login &rarr;</button>
     </Form>
     
   );
 }
 
 const FormikLoginForm = withFormik({
-  mapPropsToValues({ username, password, tos, meal }) {
+  mapPropsToValues({ username, password }) {
     return {
       username: username || "",
       password: password || "",
       
     };
   },
-//   validationSchema: Yup.object().shape({
-//      username: Yup.string()
-//       .username("username not valid")
-//       .required("username is required"),
-//     password: Yup.string()
-//       .min(16, "Password must be 16 characters or longer")
-//       .required("Password is required")
-//   }),
+  validationSchema: Yup.object().shape({
+      username: Yup.string()
+      .required("username is required"),
+    password: Yup.string()
+      .min(8, "Password must be 16 characters or longer")
+      .required("Password is required")
+  }),
   handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
     if (values.username === "alreadytaken@atb.dev") {
       setErrors({ username: "That username is already taken" });
