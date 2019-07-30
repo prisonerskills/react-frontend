@@ -15,6 +15,8 @@ export default function TalentList() {
 }, [])
 console.log(talentList)
   return <section className='character-list grid-view'>
+Where does this render?
+
 <Card.Group itemsPerRow={3 }>
        {talentList.map(talent => <TalentCards talent={talent} key={talent.id}/>)}
 </Card.Group>
