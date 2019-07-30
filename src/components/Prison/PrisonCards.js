@@ -10,10 +10,10 @@ export default function PrisonCard (props) {
       
     <Card.Header>{props.prison.prisonName}</Card.Header>
     <Card.Meta>
-      <span className='date' > Location: {props.prison.Location}</span>
+      <span className='date' > Location: {props.prison.city}</span>
     </Card.Meta>
     <Card.Description>
-<p> Location: {props.prison.location}</p>
+<p> Location: {props.prison.programs}</p>
 
     </Card.Description>
   </Card.Content>
