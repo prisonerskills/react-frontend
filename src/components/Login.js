@@ -17,7 +17,7 @@ function LoginForm({ values, errors, touched, isSubmitting }) {
         <Field type="password" name="password" placeholder="Password" />
       </div>
       
-      <button disabled={isSubmitting}>Login &rarr;</button>
+      <button type="submit" disabled={isSubmitting}>Login &rarr;</button>
     </Form>
     
   );
@@ -48,6 +48,7 @@ const FormikLoginForm = withFormik({
           console.log(res); // Data was created successfully and logs to console
           resetForm();
           setSubmitting(false);
+         // console.log(formikBag.props);
         })
         .catch(err => {
           console.log(err); // There was an error creating the data and logs to console
