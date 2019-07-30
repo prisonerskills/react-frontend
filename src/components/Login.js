@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { withFormik, Form, Field } from "formik";
+import { withFormik, Form, Field} from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
@@ -35,27 +35,28 @@ const FormikLoginForm = withFormik({
       username: Yup.string()
       .required("username is required"),
     password: Yup.string()
-      .min(8, "Password must be 16 characters or longer")
+      .min(6, "Password must be 6 characters or longer")
       .required("Password is required")
   }),
-  handleSubmit(values, { resetForm, setErrors, setSubmitting }) {
+  handleSubmit(values, formikBag) {
+    console.log(formikBag);
     if (values.username === "alreadytaken@atb.dev") {
-      setErrors({ username: "That username is already taken" });
+      formikBag.setErrors({ username: "That username is already taken" });
     } else {
       axios
         .post(" https://sheltered-ravine-78333.herokuapp.com/api/users/login", values)
         .then(res => {
-          console.log(res); // Data was created successfully and logs to console
-          resetForm();
-          setSubmitting(false);
-         // console.log(formikBag.props);
+          
+          //console.log(res); // Data was created successfully and logs to console
+          formikBag.resetForm();
+          formikBag.setSubmitting(false);
         })
         .catch(err => {
           console.log(err); // There was an error creating the data and logs to console
-          setSubmitting(false);
+          //setSubmitting(false);
         });
     }
   }
 })(LoginForm);
- //export default LoginForm;
+ 
 export default FormikLoginForm;

@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { withFormik, Form, Field } from "formik";
+import { withFormik, Form, Field} from "formik";
 import * as Yup from "yup";
 import axios from "axios";
 
@@ -49,7 +49,7 @@ const FormikRegisterForm = withFormik({
     username: Yup.string()
       .required("username is required"),
     password: Yup.string()
-      .min(8, "Password must be 8 characters or longer")
+      .min(6, "Password must be 6 characters or longer")
       .required("Password is required"),
     prisonName: Yup.string()
       .required('prison name is required'),

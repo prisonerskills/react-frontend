@@ -8,7 +8,7 @@ export default function AppRouter() {
   return <div className="page-view ui bottom attached segment active tab">
     <Switch>
     <Route exact path='/' component={TalentList} />
-    <Route path='/loginpage' component={LoginPage}/> 
+    <Route path='/loginpage' render={props=><LoginPage {...props}/>} /> 
     <Route path='/registerationpage' component={RegisterationPage}/>
     </Switch>
   </div>
