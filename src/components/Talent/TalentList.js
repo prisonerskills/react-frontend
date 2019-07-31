@@ -18,7 +18,7 @@ console.log(talentList)
   return <section className='character-list grid-view'>
 Where does this render?
 
-<Card.Group itemsPerRow={3 }>
+<Card.Group centered>
        {talentList.map(talent => <TalentCards talent={talent} key={talent.id}/>)}
 </Card.Group>
  

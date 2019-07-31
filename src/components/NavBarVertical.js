@@ -15,7 +15,7 @@ const MenuExampleAttached = props => {
         <Dropdown item icon="bars" simple>
           <Dropdown.Menu>
             <Dropdown.Item />
-            <Dropdown.Item href="/">Home</Dropdown.Item>
+            <Dropdown.Item href="/">Search/Talent</Dropdown.Item>
             <Dropdown.Item href="/loginpage">Login/Register</Dropdown.Item>
             <Dropdown.Item href="https://mystifying-goldstine-47782b.netlify.com/about.html">
               About Us
