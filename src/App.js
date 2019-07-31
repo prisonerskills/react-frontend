@@ -6,6 +6,7 @@ import Login from './components/Login.js';
 import MenuExampleAttached from './components/NavBarVertical.js';
 
 export default function App(props) {
+
   return <main>
     <Header />
     <MenuExampleAttached {...props}/> 

@@ -11,6 +11,7 @@ export default function TalentList() {
     axios.get(`https://sheltered-ravine-78333.herokuapp.com/api/prisoners`)
     .then(response =>{
       setTalentList(response.data)
+      console.log('from talentlist:', response.data)
   })
 }, [])
 console.log(talentList)

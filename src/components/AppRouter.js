@@ -9,8 +9,10 @@ import RegisterationPage from './RegisterationPage';
 export default function AppRouter() {
   return <div className="page-view ui bottom attached segment active tab">
     <Switch>
+
+    <Route exact path='/' component={TalentList} />
+    <Route path='/loginpage' render={props=><LoginPage {...props}/>} /> 
     <Route exact path='/' component={PrisonList} />
-    <Route path='/loginpage' component={LoginPage}/>
     <Route path='/talentlist' component={TalentList}/> 
     <Route path='/registerationpage' component={RegisterationPage}/>
     </Switch>
