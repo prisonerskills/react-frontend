@@ -9,15 +9,18 @@ import React from 'react'
 
 // TODO: Update <Search> usage after its will be implemented
 
-const MenuExampleAttached = () => (
+const MenuExampleAttached = (props) => {
+console.log('!!!!',props)
+  return ( 
   <div>
     <Menu attached='top'>
       <Dropdown item icon='bars' simple> 
         <Dropdown.Menu>
           <Dropdown.Item>
             <Icon name='dropdown' />
-            <Dropdown.Header Link exact path='/' component={PrisonList} >Home</Dropdown.Header>
-            
+
+            <Dropdown.Header onClick={ ()=> window.location.href = "/"} >Home</Dropdown.Header>
+
             <Dropdown.Menu>
               <Dropdown.Item href='//google.com'>About Us</Dropdown.Item>
               <Dropdown.Item href='//google.com'>Contact</Dropdown.Item>
@@ -44,5 +47,7 @@ const MenuExampleAttached = () => (
     
   </div>
 )
+
+}
 
 export default MenuExampleAttached
