@@ -44,8 +44,7 @@ Connecting talented inmates with hiring companies.
 ..availability (permissions to work in prison only or able to have work leave)
 ..List of skills and/or previous work experience. 
 ..The profile can be edited and deleted after creation.
-
-and add it to the list of prisons on the general home page. 
+..and add it to the list of prisons on the general home page. 
 
 
 5) Navigation
@@ -53,7 +52,7 @@ Navigation is present on all pages
 Users should know what page is active by clicking on a nav link and activating their tab
 
 - What features may you wish to put in a future release?
-The ability for employers to post roles or the ability for employers to give an anonymous job performance score.
+The ability for employers to post roles or the ability for employers to give an anonymous job performance score. A 'logout' feature and a hiring notification.
 
 - What do the top 3 similar apps do for their users?
 https://www.jailstojobs.org/
@@ -63,7 +62,7 @@ various state, county and private initiatives
 ##Frameworks - Libraries
 
 - What 3rd party frameworks/libraries are you considering using?
-React, Google Fonts, Semantic UI React 
+React, Google Fonts, Semantic UI React, Formik 
 - Do APIs require you to contact its maintainer to gain access?
 No.
 - Are you required to pay to use the API?
