@@ -17,7 +17,7 @@ console.log(prisonList)
   return <section className='character-list grid-view'>
 
 
-<Card.Group itemsPerRow={3 }>
+<Card.Group centered itemsPerRow={2}>
        {prisonList.map(prison => <PrisonCards prison={prison} key={prison.id}/>)}
 </Card.Group>
  
