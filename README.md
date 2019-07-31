@@ -1,4 +1,19 @@
-## MVP Features Breakdown:
+##Proposal
+
+- What problem does your app solve?
+
+Our app, UNBOUND, seeks to connect currently incarcerated individuals in prison workforce development programs, to employers seeking to leverage their skills both in a remote capacity and onsite.  
+
+- Be as specific as possible; how does your app solve the problem?
+Our app provides prisons with the ability to post talent profiles and for employers to search them and make hiring offers--it is very much a niche job board.
+
+- What is the mission statement?
+Connecting talented inmates with hiring companies.
+
+##Features
+
+- What features are required for your minimum viable product?
+  ## MVP Features Breakdown:
 
 ###Two User Stories:
 1. Prison Admin
@@ -36,6 +51,35 @@ and add it to the list of prisons on the general home page.
 5) Navigation
 Navigation is present on all pages
 Users should know what page is active by clicking on a nav link and activating their tab
+
+- What features may you wish to put in a future release?
+The ability for employers to post roles or the ability for employers to give an anonymous job performance score.
+
+- What do the top 3 similar apps do for their users?
+https://www.jailstojobs.org/
+https://www.careeronestop.org/ExOffender/default.aspx
+various state, county and private initiatives
+
+##Frameworks - Libraries
+
+- What 3rd party frameworks/libraries are you considering using?
+React, Google Fonts, Semantic UI React 
+- Do APIs require you to contact its maintainer to gain access?
+No.
+- Are you required to pay to use the API?
+Np.
+- Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?)
+No.
+
+##Target Audience
+
+- Who is your target audience? Be specific.
+Employers and prison workforce development programs 
+
+- What feedback have you gotten from potential users?
+N/A
+- Have you validated the problem and your solution with your target audience? How?
+Through published research documents such as: https://www.naco.org/resources/second-chances-safer-counties-workforce-development-and-reentry
 
 
 
