@@ -17,7 +17,6 @@ const MenuExampleAttached = () => (
           <Dropdown.Item>
             <Icon name='dropdown' />
             <Dropdown.Header Link exact path='/' component={PrisonList} >Home</Dropdown.Header>
-            
             <Dropdown.Menu>
               <Dropdown.Item href='//google.com'>About Us</Dropdown.Item>
               <Dropdown.Item href='//google.com'>Contact</Dropdown.Item>
