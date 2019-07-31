@@ -1,7 +1,7 @@
 
 import { Dropdown, Menu, Icon, Segment } from 'semantic-ui-react'
-import { NavLink, Link } from "react-router-dom";
-import TalentList from './Talent/TalentList';
+//import { NavLink, Link } from "react-router-dom";
+//import TalentList from './Talent/TalentList';
 import PrisonList from './Prison/PrisonList';
 
 
@@ -24,7 +24,7 @@ const MenuExampleAttached = () => (
             </Dropdown.Menu>
             
           </Dropdown.Item>
-          <Dropdown.Item href='//google.com'>Login/Register</Dropdown.Item>
+          <Dropdown.Item onClick={ ()=> window.location.href = "/loginpage"}>Login/Register</Dropdown.Item>
           <Dropdown.Item onClick={ ()=> window.location.href = "/talentlist"}>Search Talent</Dropdown.Item>
                    
         </Dropdown.Menu>
