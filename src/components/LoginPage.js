@@ -1,11 +1,11 @@
 import React from "react";
 import FormikLoginForm from "./Login";
 
-const LoginPage = ()=> {
+const LoginPage = (props)=> {
     return(  
     <div>
         <h1>Login</h1>
-        <FormikLoginForm/>
+        <FormikLoginForm {...props}/>
     </div>
       
     )};
