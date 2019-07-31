@@ -39,17 +39,19 @@ const FormikLoginForm = withFormik({
       .required("Password is required")
   }),
   handleSubmit(values, formikBag) {
-    console.log(formikBag);
+    //console.log(formikBag);
     if (values.username === "alreadytaken@atb.dev") {
       formikBag.setErrors({ username: "That username is already taken" });
     } else {
       axios
         .post(" https://sheltered-ravine-78333.herokuapp.com/api/users/login", values)
         .then(res => {
-          
-          //console.log(res); // Data was created successfully and logs to console
+          localStorage.setItem('token', res.data.token);
+          formikBag.props.history.push('/dashboard');
+          console.log(res); // Data was created successfully and logs to console
           formikBag.resetForm();
           formikBag.setSubmitting(false);
+
         })
         .catch(err => {
           console.log(err); // There was an error creating the data and logs to console

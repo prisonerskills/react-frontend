@@ -1,3 +1,87 @@
+##Proposal
+
+- What problem does your app solve?
+
+Our app, UNBOUND, seeks to connect currently incarcerated individuals in prison workforce development programs, to employers seeking to leverage their skills both in a remote capacity and onsite.  
+
+- Be as specific as possible; how does your app solve the problem?
+Our app provides prisons with the ability to post talent profiles and for employers to search them and make hiring offers--it is very much a niche job board.
+
+- What is the mission statement?
+Connecting talented inmates with hiring companies.
+
+##Features
+
+- What features are required for your minimum viable product?
+  ## MVP Features Breakdown:
+
+###Two User Stories:
+1. Prison Admin
+..Can log in
+2.Employer or Other General User
+..Can view posted profiles by prison
+
+###Pages:
+1)Home Page 
+..No need to log in. 
+..Contains a list of prisons who have posted prisoner profiles. 
+..Each prison is laid out in a grid format, name of the prison, number of people available to work (total number of entries a given prison admin has submitted), location of the prison
+..Clicking on a prison takes you to the prisoner profile page
+
+2) Prisoner Profile Page
+..Accessed from the home page
+..non-logged in users can view the list of profiles created by the prison they clicked on
+
+3) Single Profile Page
+..Users can click on a single post to read more of the description
+
+4) Prison Admin Home Page 
+..Prison Log-In
+..Directed to a page where they can see the people’s profiles they’ve created in a list view, and have options to create a new one
+..Allow a prison to create a profile 
+..Should include 
+..Name
+..availability (permissions to work in prison only or able to have work leave)
+..List of skills and/or previous work experience. 
+..The profile can be edited and deleted after creation.
+..and add it to the list of prisons on the general home page. 
+
+
+5) Navigation
+Navigation is present on all pages
+Users should know what page is active by clicking on a nav link and activating their tab
+
+- What features may you wish to put in a future release?
+The ability for employers to post roles or the ability for employers to give an anonymous job performance score. A 'logout' feature and a hiring notification.
+
+- What do the top 3 similar apps do for their users?
+https://www.jailstojobs.org/
+https://www.careeronestop.org/ExOffender/default.aspx
+various state, county and private initiatives
+
+##Frameworks - Libraries
+
+- What 3rd party frameworks/libraries are you considering using?
+React, Google Fonts, Semantic UI React, Formik 
+- Do APIs require you to contact its maintainer to gain access?
+No.
+- Are you required to pay to use the API?
+Np.
+- Have you considered using Apple Frameworks? (MapKit, Healthkit, ARKit?)
+No.
+
+##Target Audience
+
+- Who is your target audience? Be specific.
+Employers and prison workforce development programs 
+
+- What feedback have you gotten from potential users?
+N/A
+- Have you validated the problem and your solution with your target audience? How?
+Through published research documents such as: https://www.naco.org/resources/second-chances-safer-counties-workforce-development-and-reentry
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
