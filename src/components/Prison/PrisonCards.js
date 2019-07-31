@@ -1,25 +1,24 @@
 import React from 'react';
 import PrisonList from './PrisonList';
 
-import { Card, Button, Modal, Icon } from 'semantic-ui-react'
+import { Card, Button, Image, Icon } from 'semantic-ui-react'
 
 export default function PrisonCard (props) {
-  return <Card centered color='orange'>
-  
+  return <Card color='orange'>
+  <Image size='medium'src={props.prison.image} wrapped ui={true} />
   <Card.Content>  
-      
-    <Card.Header>{props.prison.prisonName}</Card.Header>
+      <Card.Header centered>{props.prison.prisonName}</Card.Header>
     <Card.Meta>
       <span className='date' > Location: {props.prison.city}</span>
     </Card.Meta>
     <Card.Description>
 
-<h3> Programs: <br></br></h3>
+<h4> Programs: <br></br></h4>
 <p>{props.prison.programs[0]}</p>
 <p>{props.prison.programs[1]}</p>
 <p> {props.prison.programs[2]}</p>
 <p> {props.prison.programs[3]}</p>
-<p> Location: {props.prison.programs}</p>
+
   <Button>Click Here</Button>
 
     </Card.Description>
