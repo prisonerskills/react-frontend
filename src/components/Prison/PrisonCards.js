@@ -1,10 +1,12 @@
 import React from 'react';
 import PrisonList from './PrisonList';
+import { Link } from 'react-router-dom';
 
 import { Card, Button, Modal, Icon } from 'semantic-ui-react'
 
 export default function PrisonCard (props) {
-  return <Card centered color='orange'>
+  console.log('from prisoncards:', props.prison)
+  return <Card>
   
   <Card.Content>  
       
@@ -20,8 +22,7 @@ export default function PrisonCard (props) {
 <p> {props.prison.programs[2]}</p>
 <p> {props.prison.programs[3]}</p>
 <p> Location: {props.prison.programs}</p>
-  <Button>Click Here</Button>
-
+ <Link to={`/talent/${props.prison.id}`}><Button>Click Here</Button></Link> 
     </Card.Description>
   
   </Card.Content>
